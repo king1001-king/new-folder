@@ -1,0 +1,126 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>We provide the best clothes in this town.</p>
+  <p>we are providing good and branded clothes at good price. Just pick my store live a happy life .</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://assets.entrepreneur.com/content/3x2/2000/20180403184403-GettyImages-660629502.jpeg" style="width:100%">
+      <div class="container">
+        <h2>James deo</h2>
+        <p class="title">CEO & Founder</p>
+        <p>I am cute and awesome.</p>
+        <p>james@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://miro.medium.com/max/1400/1*TtvWXDDDfnSZ30fXp6sn5Q.jpeg" style="width:100%">
+      <div class="container">
+        <h2>Harvey parker</h2>
+        <p class="title">bussinesman</p>
+        <p>I am money man </p>
+        <p>harvey@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI38u4DslcWwLvJDUTMognDUJmF-JIRJN-I454BiN8nkbn57hagWebF6_P_m45wyjyAeE&usqp=CAU" style="width:100%">
+      <div class="container">
+        <h2>Tony stark</h2>
+        <p class="title">movie star</p>
+        <p>I AM IRON-MAN.</p>
+        <p>tony@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
